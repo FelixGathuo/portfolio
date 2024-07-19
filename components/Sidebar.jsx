@@ -1,5 +1,4 @@
 import React from 'react'
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import Image from 'next/image';
 import profile from '@/public/images/profile.jpg'

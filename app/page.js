@@ -1,21 +1,17 @@
 import React from "react";
-import Image from "next/image";
-import profile from "@/public/images/profile.jpg";
 import Link from "next/link";
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const Home = () => {
   return (
     <div className="flex-1 p-10 ml-64">
-      <section id="home" className="text-white">
+      <section id="home" className="text-black">
         <h2 className="text-4xl font-bold mb-4">Home</h2>
         <p>
           Welcome to my portfolio website. Here you can find my resume and
           contact information.
         </p>
-
         
-        <i class="fa-brands fa-square-github"></i>
-        {/* <FontAwesomeIcon icon="fa-brands fa-square-github" /> */}
       </section>
       <section id="skills" className="mt-10">
         <h2 className="text-4xl font-bold mb-4 border-b">Skills</h2>
@@ -27,14 +23,13 @@ const Home = () => {
           <li>Integrating Odoo with other systems and services</li>
           <li>
             Developing and customizing Odoo modules to meet business
-            requirements, working across the full stack from front-end to
-            back-end
+            requirements, working across the full stack
           </li>
-          <li>Test-driven development using Python.</li>
+          <li>5 years experience using Python.</li>
           <li>SQL and database modeling.</li>
         </div>
       </section>
-      <section id="resume" className="mt-10">
+      <section id="resume" className="mt-10 z-1">
         <h2 className="text-4xl font-bold mb-4 border-b">Resume</h2>
         <p>Software Engineer with 3+ years of experience in building systems</p>
         <h2 className="text-2xl">Education</h2>
@@ -52,15 +47,14 @@ const Home = () => {
           <Link href="emailt0:gathuofelix@gmail.com">
             gathuofelix@gmail.com
           </Link>
-          <h2 className="text-2xl">Github</h2>
+          <FaGithub />
           <Link href="https://github.com/FelixGathuo">FelixGathuo</Link>
-          <i className="fa-brands fa-linkedin"></i>
-          <p>LinkedIn</p>
+          <i class="fa-brands fa-linkedin"></i>
+          <FaLinkedin />
           <Link href="https://www.linkedin.com/in/felixgathuo">
             Felix Gathuo
           </Link>
-          <i className="fa-brands fa-x-twitter"></i>
-          <p className="text-2xl">X</p>
+          <FaTwitter />
           <Link href="https://x.com/masterchief_F">@masterchief_F</Link>
         </div>
       </section>

@@ -4,7 +4,7 @@ import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const Home = () => {
   return (
-    <div className="flex-1 p-10 ml-64">
+    <div className="p-10 md:ml-64">
       <section id="home" className="bg-white shadow-lg rounded-lg p-6 mb-6 border-x-4 border-gray-200">
         <h2 className="text-4xl font-bold mb-4">Home</h2>
         <p>

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import profile from '@/public/images/profile.jpg';
 import Link from 'next/link';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -21,22 +21,19 @@ const Sidebar = () => {
             <Image src={profile} alt="Profile Picture" className='w-24 h-24 rounded-full' />
             <h1 className="text-2xl font-bold ml-4">Felix Gathuo</h1>
           </div>
-          <button onClick={toggleSidebar} className="md:hidden text-2xl">
-            <FaTimes />
-          </button>
         </div>
         <ul className="flex flex-col p-4">
           <li className="mb-2">
-            <Link href="#home"className="block py-2 px-4 rounded hover:bg-gray-700 transition-colors">Home
+            <Link onClick={toggleSidebar} href="#home"className="block py-2 px-4 rounded hover:bg-gray-700 transition-colors">Home
             </Link>
           </li>
           <li className="mb-2">
-            <Link href="#resume"
+            <Link onClick={toggleSidebar} href="#resume"
                className="block py-2 px-4 rounded hover:bg-gray-700 transition-colors">Resume
             </Link>
           </li>
           <li className="mb-2">
-            <Link href="#contact" className="block py-2 px-4 rounded hover:bg-gray-700 transition-colors">Contact
+            <Link onClick={toggleSidebar} href="#contact" className="block py-2 px-4 rounded hover:bg-gray-700 transition-colors">Contact
             </Link>
           </li>
         </ul>

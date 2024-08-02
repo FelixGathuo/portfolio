@@ -6,14 +6,14 @@ import Link from 'next/link';
 import { FaBars } from 'react-icons/fa';
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className='hidden'>
+    <div>
       {/* Sidebar for larger screens */}
       <nav className={`fixed top-0 left-0 w-64 h-screen bg-gray-800 text-white flex flex-col ${isOpen ? 'block' : 'hidden'} md:block`}>
         <div className="flex items-center justify-between h-40 border-b border-gray-700 p-4">

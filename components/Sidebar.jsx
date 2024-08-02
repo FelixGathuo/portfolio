@@ -13,7 +13,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
+    <div >
       {/* Sidebar for larger screens */}
       <nav className={`fixed top-0 left-0 w-64 h-screen bg-gray-800 text-white flex flex-col ${isOpen ? 'block' : 'hidden'} md:block`}>
         <div className="flex items-center justify-between h-40 border-b border-gray-700 p-4">
